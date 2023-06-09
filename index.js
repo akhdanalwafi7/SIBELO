@@ -29,7 +29,7 @@ app.post("/login", (req, res) => {
     res.redirect("/home");
   } else if (pilihan === "admin") {
     res.redirect("/admin");
-  } else {
+  } else if (pilihan === "guest") {
     res.redirect("/homebef");
   }
 });
