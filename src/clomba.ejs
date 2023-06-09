@@ -1,0 +1,59 @@
+<%- include('partials/head')%> <%- include('partials/navbar')%>
+
+<div class="">
+  <div class="container mx-auto flex justify-center items-center sm:p-8 w-full">
+    <div class="p-8 bg-white rounded-2xl shadow-md m-8 w-4/5">
+      <div class="flex justify-start flex-col items-start">
+        <h1 class="text-3xl/none text-orange1 font-bold mb-4">
+          Tambah Catatan Lomba
+        </h1>
+        <p class="mb-4">Pastikan isi dengan benar ya!</p>
+        <hr class="border border-blue1 mb-4 border-solid w-full" />
+        <form class="w-full" action="/admin/pengajuan-mahasiswa">
+          <label class="block mb-2">Nama Lomba</label>
+          <input
+            class="block mb-2 w-full border border-orange1 border-solid py-2 px-4 rounded-2xl"
+            type="text"
+          />
+          <label class="block mb-2">Jadwal Berlangsung</label>
+          <input
+            class="block mb-2 w-full border border-orange1 border-solid py-2 px-4 rounded-2xl"
+            type="text"
+          />
+          <label class="block mb-2">Jenis Lomba</label>
+          <input
+            class="block mb-2 w-full border border-orange1 border-solid py-2 px-4 rounded-2xl"
+            type="text"
+          />
+          <label class="block mb-2">Status</label>
+          <select class="form-select mb-2" name="" id="">
+            <option value="">Juara 1</option>
+            <option value="">Juara 2</option>
+            <option value="">Juara 3</option>
+            <option value="">Juara Harapan 1</option>
+            <option value="">Juara Harapan 2</option>
+            <option value="">Juara Harapan 3</option>
+            <option value="">Lainnya</option>
+          </select>
+          <label class="block mb-2">Bukti Lomba</label>
+          <div class="input-group mb-2">
+            <input type="file" class="form-control" id="inputGroupFile02" />
+          </div>
+          <label class="block mb-2">Poster Lomba</label>
+          <div class="input-group mb-4">
+            <input type="file" class="form-control" id="inputGroupFile02" />
+          </div>
+          <hr class="border border-blue1 mb-4 border-solid w-full" />
+          <button
+            class="bg-[#EA580C] text-white w-full p-3 rounded-2xl"
+            type="submit"
+          >
+            Ajukan
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer')%>

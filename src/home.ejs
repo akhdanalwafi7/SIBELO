@@ -1,0 +1,102 @@
+<%- include('partials/head')%> <%- include('partials/navbar')%>
+
+<div class="container mx-auto flex flex-col justify-start items-start sm:p-8">
+  <div
+    class="w-full flex flex-row justify-start items-center bg-white rounded-2xl shadow-md mb-8"
+  >
+    <div class="flex-1 flex flex-col p-12 text-[#334155]">
+      <h1 class="text-7xl/none font-bold mb-8">
+        SELAMAT DATANG DI <span class="text-orange1">SIBELO</span>
+      </h1>
+      <h2 class="text-3xl/none text-[#334155] mb-8">
+        SISTEM INFORMASI <span class="text-orange1">BEASISWA</span> DAN
+        <span class="text-orange1">LOMBA</span>
+      </h2>
+      <p class="mb-8">
+        Kebutuhan akan informasi sangat tinggi bagi mahasiswa, tidak terkecual
+        informasi mengenai beasiswa dan lomba. Mahasiswa sangat peduli akan
+        kualitas dirinya agar dapat bertahan dan menghadapi galapnya dunia
+        kuliah bahkan kerja bila ia tidak dibekali oleh ilmu.
+      </p>
+      <hr class="border border-[#334155] mb-8 border-solid w-full" />
+      <div class="w-full flex justify-start items-center">
+        <a
+          class="bg-orange1 p-4 rounded-2xl text-white hover:bg-[#BA3636]"
+          href="/home"
+        >
+          Lihat Lebih Lanjut
+        </a>
+      </div>
+    </div>
+    <div class="flex-1 flex flex-col justify-center items-center p-12">
+      <img class="aspect-square" src="img/logo.png" alt="" width="500px" />
+    </div>
+  </div>
+
+  <div
+    class="w-full flex flex-row flex-wrap justify-start items-center bg-white rounded-2xl p-8 shadow-md"
+  >
+    <div class="flex flex-col flex-1 justify-center items-center mr-4">
+      <div
+        class="bg-[#33363F] text-white flex-1 rounded-2xl p-8 text-center shadow-md"
+      >
+        <h1 class="font-bold text-xl mb-4">INFORMASI LOMBA</h1>
+        <p class="mb-8">
+          Lomba akademik, non-akademik, nasional, hingga internasional
+        </p>
+        <a
+          class="bg-orange1 p-3 rounded-2xl text-white hover:bg-[#BA3636]"
+          href="/browse"
+        >
+          Selengkapnya
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col flex-1 justify-center items-center mr-4">
+      <div
+        class="bg-[#33363F] text-white flex-1 rounded-2xl p-8 text-center shadow-md"
+      >
+        <h1 class="font-bold text-xl mb-4">INFORMASI BEASISWA</h1>
+        <p class="mb-8">
+          Beasiswa pemerintah, swasta, tidak mampu, hingga prestasi
+        </p>
+        <a
+          class="bg-orange1 p-3 rounded-2xl text-white hover:bg-[#BA3636]"
+          href="/browse2"
+        >
+          Selengkapnya
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col flex-1 justify-center items-center mr-4">
+      <div
+        class="bg-[#33363F] text-white flex-1 rounded-2xl p-8 text-center shadow-md"
+      >
+        <h1 class="font-bold text-xl mb-4">CATAT LOMBA</h1>
+        <p class="mb-8">Lakukan pencatatan lomba yang anda miliki!</p>
+        <a
+          class="bg-orange1 p-3 rounded-2xl text-white hover:bg-[#BA3636]"
+          href="/catat-lomba"
+        >
+          Catat Lomba!
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col flex-1 justify-center items-center">
+      <div
+        class="bg-[#33363F] text-white flex-1 rounded-2xl p-8 text-center shadow-md"
+      >
+        <h1 class="font-bold text-xl mb-4">CATAT BEASISWA</h1>
+        <p class="mb-8">Lakukan pencatatan beasiswa yang anda miliki!</p>
+        <a
+          class="bg-orange1 p-3 rounded-2xl text-white hover:bg-[#BA3636]"
+          href="/catat-beasiswa"
+        >
+          Catat Beasiswa!
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer')%>

@@ -1,0 +1,133 @@
+<%- include('partials/head')%> <%- include('partials/navbarad')%>
+
+<div class="">
+  <div class="container mx-auto flex justify-center items-center sm:p-8 w-full">
+    <div class="p-8 bg-white rounded-2xl shadow-md m-8 w-full">
+      <div class="flex justify-start flex-col items-start">
+        <h1 class="text-3xl/none text-orange1 font-bold mb-4">
+          Lihat Postingan Lomba
+        </h1>
+        <p class="mb-4">
+          Anda dapat melihat, mengedit dan menghapus postingan lomba disini
+        </p>
+        <hr class="border border-blue1 mb-4 border-solid w-full" />
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Poster</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Jadwal</th>
+              <th scope="col">Jenis</th>
+              <th scope="col">Sertifikasi</th>
+              <th scope="col">Link</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                <div
+                  class="flex flex-1 items-center mr-8 bg-[#BA3636] w-full justify-center"
+                >
+                  <img
+                    class="aspect-square rounded-full"
+                    src="/img/html5.png"
+                    alt="gambar-lomba"
+                    width="128px"
+                  />
+                </div>
+              </td>
+              <td>
+                <a href="/details"
+                  >[GRATIS] Kompetisi Pemrograman HTML 2023, Hadiah 4 Juta</a
+                >
+              </td>
+              <td>20/05/2023 - 20/06/2023</td>
+              <td>Nasional</td>
+              <td>Ada</td>
+              <td>https://linklomba.com</td>
+              <td>
+                <div class="flex flex-row justify-center items-center">
+                  <button class="bg-[#EA580C] text-white flex-1 p-2 mr-4">
+                    Edit
+                  </button>
+                  <button class="bg-[#BA3636] text-white flex-1 p-2">
+                    Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>
+                <div
+                  class="flex flex-1 items-center mr-8 bg-[#BA3636] w-full justify-center"
+                >
+                  <img
+                    class="aspect-square rounded-full"
+                    src="/img/css3.png"
+                    alt="gambar-lomba"
+                    width="128px"
+                  />
+                </div>
+              </td>
+              <td>
+                <a href="/details"
+                  >[GRATIS] Kompetisi CSS Nasional 2022, Hadiah 3 Juta</a
+                >
+              </td>
+              <td>20/05/2023 - 20/06/2023</td>
+              <td>Internasional</td>
+              <td>Ada</td>
+              <td>https://linklomba.com</td>
+              <td>
+                <div class="flex flex-row justify-center items-center">
+                  <button class="bg-[#EA580C] text-white flex-1 p-2 mr-4">
+                    Edit
+                  </button>
+                  <button class="bg-[#BA3636] text-white flex-1 p-2">
+                    Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>
+                <div
+                  class="flex flex-1 items-center mr-8 bg-[#BA3636] w-full justify-center"
+                >
+                  <img
+                    class="aspect-square rounded-full"
+                    src="/img/javascript.png"
+                    alt="gambar-lomba"
+                    width="128px"
+                  />
+                </div>
+              </td>
+              <td><a href="/details">Lomba JavaScript</a></td>
+              <td>20/05/2023 - 20/06/2023</td>
+              <td>Universitas</td>
+              <td>Tidak Ada</td>
+              <td>https://linklomba.com</td>
+              <td>
+                <div class="flex flex-row justify-center items-center">
+                  <button class="bg-[#EA580C] text-white flex-1 p-2 mr-4">
+                    Edit
+                  </button>
+                  <button class="bg-[#BA3636] text-white flex-1 p-2">
+                    Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer')%>

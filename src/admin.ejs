@@ -1,0 +1,79 @@
+<%- include('partials/head')%> <%- include('partials/navbarad')%>
+
+<div class="w-full h-max">
+  <div class="container mx-auto flex justify-center items-center">
+    <div class="p-8 bg-white rounded-2xl shadow-md m-8">
+      <div class="flex justify-center items-center mb-8">
+        <img
+          class="aspect-square w-[30%] rounded-full"
+          src="img/user.jpg"
+          alt="logo"
+        />
+      </div>
+      <div class="flex justify-start flex-col items-start">
+        <h1 class="text-3xl/none text-orange1 font-bold mb-4">
+          Akhdan Al Wafi
+        </h1>
+        <p class="mb-8 text-xl/none">Admin</p>
+        <hr class="border border-blue1 mb-4 border-solid w-full" />
+        <div
+          class="text-white mb-4 w-full flex flex-col justify-center items-center"
+        >
+          <a
+            class="text-lg font-bold rounded-2xl mb-4 w-full p-4 bg-[#334155] hover:bg-[#ba3636]"
+            href="/admin/posting-lomba"
+            >Posting Lomba
+            <p class="font-normal text-base">
+              Klik disini untuk memposting lomba baru
+            </p></a
+          >
+
+          <a
+            class="text-lg font-bold rounded-2xl mb-4 w-full p-4 bg-[#334155] hover:bg-[#ba3636]"
+            href="/admin/posting-beasiswa"
+            >Posting Beasiswa
+            <p class="font-normal text-base">
+              Klik disini untuk memposting beasiswa baru
+            </p></a
+          >
+          <a
+            class="text-lg font-bold rounded-2xl mb-4 w-full p-4 bg-[#334155] hover:bg-[#ba3636]"
+            href="/admin/postingan-lomba"
+            >Lihat Postingan Lomba
+            <p class="font-normal text-base">
+              Klik disini untuk melihat semua postingan lomba
+            </p></a
+          >
+          <a
+            class="text-lg font-bold rounded-2xl w-full p-4 bg-[#334155] hover:bg-[#ba3636]"
+            href="/admin/postingan-beasiswa"
+            >Lihat Postingan Beasiswa
+            <p class="font-normal text-base">
+              Klik disini untuk melihat semua postingan beasiswa
+            </p></a
+          >
+          >
+          <a
+            class="text-lg font-bold rounded-2xl w-full p-4 bg-[#334155] hover:bg-[#ba3636]"
+            href="/admin/pengajuan-mahasiswa"
+            >Lihat Pengajuan Mahasiswa
+            <p class="font-normal text-base">
+              Klik disini untuk melihat pengajuan mahasiswa
+            </p></a
+          >
+        </div>
+        <hr class="border border-blue1 mb-8 border-solid w-full" />
+        <form class="w-full" action="/login">
+          <button
+            class="bg-[#EA580C] text-white w-full p-3 rounded-2xl"
+            type="submit"
+          >
+            Log Out
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer')%>
