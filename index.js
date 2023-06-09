@@ -3,8 +3,10 @@ const app = express();
 const path = require("path");
 const ejs = require("ejs");
 
-
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/src"));
@@ -21,17 +23,19 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
 app.post("/login", (req, res) => {
-  let pilihan = req.body.radio
-  if(pilihan === 'user' ){
-    res.redirect('/home')
-  }else if(pilihan === 'admin')
-  {
-    res.redirect('/admin')
+  let pilihan = req.body.radio;
+  if (pilihan === "user") {
+    res.redirect("/home");
+  } else if (pilihan === "admin") {
+    res.redirect("/admin");
+  } else {
+    res.redirect("/homebef");
   }
+});
+
+app.get("/homebef", (req, res) => {
+  res.render("homebef");
 });
 
 app.get("/profile", (req, res) => {

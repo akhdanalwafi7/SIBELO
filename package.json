@@ -15,5 +15,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Tugas APSI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhdanalwafi7/SIBELO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akhdanalwafi7/SIBELO/issues"
+  },
+  "homepage": "https://github.com/akhdanalwafi7/SIBELO#readme"
 }
